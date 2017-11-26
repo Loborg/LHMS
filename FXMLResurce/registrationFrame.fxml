@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<GridPane hgap="10.0" vgap="5.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="registrationFrame.RegistrationFrameController">
+<stylesheets><URL value="@registration.css" /></stylesheets>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Regisztráció" />
+      <Label text="Felhasználói név:" GridPane.rowIndex="1" />
+	  <TextField fx:id="userName" GridPane.rowIndex="2" />
+      <Label text="Jelszó:" GridPane.rowIndex="3" />
+	  <PasswordField GridPane.rowIndex="4" />
+      <Label text="Jelszó megerősítése:" GridPane.rowIndex="5" />
+	  <PasswordField GridPane.rowIndex="6" />
+	  <Label text="Jelszó errőssége:" GridPane.rowIndex="7" />
+	  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <Label text="Email cím:" GridPane.rowIndex="8" />
+      <TextField fx:id="email" GridPane.rowIndex="9" />
+      <Label text="Email cím megerősítése" GridPane.rowIndex="10" />
+      <TextField GridPane.rowIndex="11" />
+	  <Button mnemonicParsing="false" onAction="#regSave" text="Mentés" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+   </children>
+</GridPane>

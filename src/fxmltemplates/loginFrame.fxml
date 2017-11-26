@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+<?import java.net.*?>
+
+<GridPane fx:controller="controllers.LoginFrameController" styleClass="root" hgap="10.0" vgap="10.0" xmlns:fx="http://javafx.com/fxml/1">
+<stylesheets><URL value="@../stilesheets/login.css"/></stylesheets>
+   <padding>
+      <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+   </padding>
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bejelentkezés" />
+      <Label text="Felhasználói név:" GridPane.rowIndex="1" />
+      <TextField prefHeight="25.0" prefWidth="125.0" GridPane.rowIndex="2" />
+      <Label text="Jelszó:" GridPane.rowIndex="3" />
+      <PasswordField GridPane.rowIndex="4" />
+      <Button mnemonicParsing="false" text="Bejelentkezés" GridPane.columnIndex="1" GridPane.rowIndex="6" onAction="#loginButton"/>
+      <Button mnemonicParsing="false" text="Kilépés" GridPane.columnIndex="0" GridPane.rowIndex="6" onAction="#exitButton" />
+   </children>
+</GridPane>
