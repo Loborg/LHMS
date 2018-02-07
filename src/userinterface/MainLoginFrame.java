@@ -17,21 +17,21 @@ public class MainLoginFrame extends Application {
 	@Override
 	public void start(Stage stage) throws Exception {
 		
-		stage = this.stage;
+            stage = this.stage;
 
-		Parent root = FXMLLoader.load(getClass().getResource("../fxmltemplates/loginFrame.fxml"));
-		
-		Scene scene = new Scene(root);
-		
-		stage.setScene(scene);
-		//stage.setOnCloseRequest(e->e.consume()); //Ez ugyan az mint az eventHandleres csak Lambda operátorral
-		
-		stage.setOnCloseRequest(new EventHandler<WindowEvent>() {
+            Parent root = FXMLLoader.load(getClass().getResource("../fxmltemplates/loginFrame.fxml"));
+
+            Scene scene = new Scene(root);
+
+            stage.setScene(scene);
+            //stage.setOnCloseRequest(e->e.consume()); //Ez ugyan az mint az eventHandleres csak Lambda operátorral
+
+            stage.setOnCloseRequest(new EventHandler<WindowEvent>() {
             @Override
             public void handle(WindowEvent event) {
                 event.consume();
-            }
-        });
+                }
+            });
 		
 		mainFrame.start(MainMainFrame.stage);
 		stage.setAlwaysOnTop(true);
