@@ -19,7 +19,7 @@ public class MainLoginFrame extends Application {
 		
             stage = this.stage;
 
-            Parent root = FXMLLoader.load(getClass().getResource("../fxmltemplates/loginFrame.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/fxmltemplates/loginFrame.fxml"));
 
             Scene scene = new Scene(root);
 

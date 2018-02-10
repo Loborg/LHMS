@@ -16,7 +16,7 @@ public class MainRegistrationFrame extends Application {
 		
 		this.stage = stage;
 		
-		root = FXMLLoader.load(getClass().getResource("../fxmltemplates/registrationFrame.fxml"));
+		root = FXMLLoader.load(getClass().getResource("/fxmltemplates/registrationFrame.fxml"));
 		
 		Scene scene = new Scene(root);
 		

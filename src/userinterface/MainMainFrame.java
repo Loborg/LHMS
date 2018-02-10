@@ -17,7 +17,7 @@ public class MainMainFrame extends Application {
 		stage = this.stage;
 		
 		try {
-			Parent root = FXMLLoader.load(getClass().getResource("../fxmltemplates/mainFrame.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("/fxmltemplates/mainFrame.fxml"));
 			
 			scene = new Scene(root, 1024, 768);
 			
