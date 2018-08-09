@@ -11,8 +11,7 @@ public class SQLConnector {
 	/**Ennek a metódusnak a segítségével csatlakozhatunk a megadott mysql adatbázishoz.
 	 * Midhárom paraméter megléte sestén a program csatlakozik a megadott adatbázishoz.
 	 *@param forName Ide kerül az SQL adatbázis csomag eléres MYSQL = "com.mysql.jdbc.Driver" MSSQL = "com.microsoft.sqlserver.jdbc.SQLServerDriver"
-	 *@param URL Ide kerül az adatbázis elérési útja pl: MYSQL = jdbc:mysql://127.0.0.1/javadb?useSSL=false MSSQL = jdbc:sqlserver://192.168.3.14", "fattila",
-               "e34jDTBN"
+	 *@param URL Ide kerül az adatbázis elérési útja pl: MYSQL = jdbc:mysql://127.0.0.1/javadb?useSSL=false
 	 *@param user Ide kerül az adatbázishoz tartozó felhasználói név
 	 *@param pass Ide kerül az adatbázishoz tartozó jelszó
 	 * **/
